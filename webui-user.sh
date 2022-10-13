@@ -10,7 +10,7 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--ckpt /home/zheng/Documents/GitHub/stable-diffusion-webui/models/Stable-diffusion/animefull-final-pruned.ckpt --config /home/zheng/Documents/GitHub/stable-diffusion-webui/models/Stable-diffusion/animefull-final-pruned.yaml"
 
 # python3 executable
 #python_cmd="python3"
@@ -25,7 +25,8 @@ export COMMANDLINE_ARGS=""
 #export LAUNCH_SCRIPT="launch.py"
 
 # install command for torch
-#export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
+# export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
+export TORCH_COMMAND="pip install /home/zheng/Downloads/torch-1.12.1+cu113-cp38-cp38-linux_x86_64.whl /home/zheng/Downloads/torchvision-0.13.1+cu113-cp38-cp38-linux_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu113"
 
 # Requirements file to use for stable-diffusion-webui
 #export REQS_FILE="requirements_versions.txt"
